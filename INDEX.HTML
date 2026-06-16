@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>מתנות ממותגות אישית</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0066cc,#00b3ff);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 25px;
+    background:white;
+    color:#0066cc;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e8f3ff;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0066cc;
+    font-size:2rem;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    color:#0066cc;
+    margin-bottom:10px;
+}
+
+.form-container{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    max-width:700px;
+    margin:auto;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    background:#0066cc;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0052a3;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>מתנות ממותגות אישית</h1>
+    <p>כוסות, חולצות, מחזיקי מפתחות, הדפסות אישיות ומתנות לכל אירוע</p>
+    <a href="#contact" class="btn">הזמן עכשיו</a>
+</header>
+
+<section class="section">
+    <h2 class="section-title">המוצרים שלנו</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d" alt="">
+            <div class="card-content">
+                <h3>כוסות ממותגות</h3>
+                <p>הדפסה אישית עם לוגו, תמונה או הקדשה.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="">
+            <div class="card-content">
+                <h3>חולצות מודפסות</h3>
+                <p>מתנה מושלמת לעובדים, משפחה ואירועים.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1616628182509-6f37f8efec47" alt="">
+            <div class="card-content">
+                <h3>מחזיקי מפתחות</h3>
+                <p>מיתוג אישי לעסקים וללקוחות.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="">
+            <div class="card-content">
+                <h3>מארזי מתנה</h3>
+                <p>מארזים יוקרתיים עם מיתוג מלא.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2 class="section-title">בקשת הצעת מחיר</h2>
+
+    <div class="form-container">
+        <form>
+            <label>שם מלא</label>
+            <input type="text" placeholder="הכנס שם">
+
+            <label>טלפון</label>
+            <input type="tel" placeholder="הכנס טלפון">
+
+            <label>אימייל</label>
+            <input type="email" placeholder="הכנס אימייל">
+
+            <label>פרטי ההזמנה</label>
+            <textarea rows="5" placeholder="ספר לנו מה תרצה למתג"></textarea>
+
+            <button type="submit">שלח בקשה</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 כל הזכויות שמורות | מתנות ממותגות אישית
+</footer>
+
+</body>
+</html>
